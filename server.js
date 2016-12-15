@@ -124,9 +124,7 @@ var server = http.createServer(credentials,function(request, response) {
     response.end("Exception");
   });
 
-}).listen(port1,function(){
-  console.log("Server is running");
-});
+}).listen(port1);
 
 /**
 * getFile function implementation
