@@ -17,7 +17,7 @@ var certificate = fs.readFileSync(__dirname+'/cert.pem', 'utf8');
 
 
 var ip = process.env.IP || '127.0.0.1'; //process.env.OPENSHIFT_NODEJS_IP ||
-var port1 = process.env.PORT || 3001;//process.env.OPENSHIFT_NODEJS_PORT ||
+var port1 = process.env.PORT || 3000;//process.env.OPENSHIFT_NODEJS_PORT ||
 var port2      = 8081;
 
 var checkMimeType = true;
@@ -124,7 +124,7 @@ var server = http.createServer(credentials,function(request, response) {
     response.end("Exception");
   });
 
-}).listen(port1,ip,function(){
+}).listen(port1,function(){
   console.log("Server is running");
 });
 

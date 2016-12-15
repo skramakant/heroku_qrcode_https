@@ -12,7 +12,7 @@
 
         function initiate() {
             if ("WebSocket" in window) {
-                var ws = new WebSocket("wss://127.0.0.1:3001/qrcode");
+                var ws = new WebSocket("wss://qrcodehttps.herokuapp.com/qrcode");
 
                 var heartbeat_msg = {
                     op: 'ping'
